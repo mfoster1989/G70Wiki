@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import VuePullRefresh from 'vue-pull-refresh'
 import TheArticles from './components/TheArticles.vue'
 import TheArticlesDelete from './components/TheArticlesDelete.vue'
 import TheArticlesUpdate from './components/TheArticlesUpdate.vue'
@@ -23,6 +24,8 @@ import TheVideosAdd from './components/TheVideosAdd.vue'
 import TheVideosUpdate from "./components/TheVideosUpdate.vue"
 import TheVideosDelete from "./components/TheVideosDelete.vue"
 import TheMasterList from "./components/TheMasterList.vue"
+import TheVueTypeahead from './components/TheVueTypeahead.vue'
+import TheLinkPrevue from "./components/TheLinkPrevue.vue"
 
 
 export default {
@@ -36,8 +39,24 @@ export default {
     TheVideos, 
     TheVideosAdd,
     TheVideosUpdate,
-    TheVideosDelete
+    TheVideosDelete,
   },
+  components: {
+        'vue-pull-refresh': VuePullRefresh
+    },
+    data: function () {
+        return {};
+    },
+    methods: {
+        onRefresh: function() {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    resolve();
+                }, 1000);
+            });
+        }
+    },
+    template: '<vue-pull-refresh :on-refresh="onRefresh"></vue-pull-refresh>'
 }
 </script>
 

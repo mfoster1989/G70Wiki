@@ -1,4 +1,3 @@
-
 <template>
     <form v-on:submit.prevent='sendData(articleFormDelete)'>
     <p class='form--title'> Delete submitted article </p>

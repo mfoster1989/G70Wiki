@@ -2,6 +2,9 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import Autocomplete from 'vuejs-auto-complete'
+import LinkPrevue from 'link-prevue'
+import Axios from 'axios'
 
 Vue.config.productionTip = false
 

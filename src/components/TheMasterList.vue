@@ -1,5 +1,7 @@
 <template>
+
 <div id="tbd">
+  
   <div id="article">
     <div v-bind:key="article.description" v-for="article in data.article" class="card">
                 <div class="corner">Article
