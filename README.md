@@ -2,6 +2,10 @@
 
 > A place to store cool links and youtube videos
 
+Deployed link: http://hulking-apparel.surge.sh
+back end deployed https://powerful-ravine-91600.herokuapp.com/
+back end repo: https://github.com/mfoster1989/g70WikiBackEnd
+
 ## Build Setup
 
 ``` bash
