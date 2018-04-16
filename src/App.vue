@@ -15,35 +15,35 @@
 
 <script>
 import VuePullRefresh from 'vue-pull-refresh'
-import TheArticles from './components/TheArticles.vue'
-import TheArticlesDelete from './components/TheArticlesDelete.vue'
-import TheArticlesUpdate from './components/TheArticlesUpdate.vue'
-import TheArticlesAdd from './components/TheArticlesAdd.vue'
-import TheVideos from './components/TheVideos.vue'
-import TheVideosAdd from './components/TheVideosAdd.vue'
-import TheVideosUpdate from "./components/TheVideosUpdate.vue"
-import TheVideosDelete from "./components/TheVideosDelete.vue"
-import TheMasterList from "./components/TheMasterList.vue"
-import TheVueTypeahead from './components/TheVueTypeahead.vue'
-import TheLinkPrevue from "./components/TheLinkPrevue.vue"
+import TheArticles from '@/components/TheArticles.vue'
+import TheArticlesDelete from '@/components/TheArticlesDelete.vue'
+import TheArticlesUpdate from '@/components/TheArticlesUpdate.vue'
+import TheArticlesAdd from '@/components/TheArticlesAdd.vue'
+import TheVideos from '@/components/TheVideos.vue'
+import TheVideosAdd from '@/components/TheVideosAdd.vue'
+import TheVideosUpdate from "@/components/TheVideosUpdate.vue"
+import TheVideosDelete from "@/components/TheVideosDelete.vue"
+import TheMasterList from "@/components/TheMasterList.vue"
+import TheVueTypeahead from '@/components/TheVueTypeahead.vue'
+import TheLinkPrevue from "@/components/TheLinkPrevue.vue"
 
 
 export default {
   name: 'App',
   components: {
-    TheMasterList,
-    TheArticles, 
-    TheArticlesAdd,
+    TheArticles,
+    TheArticlesDelete,
     TheArticlesUpdate,
-    TheArticlesDelete, 
-    TheVideos, 
+    TheArticlesAdd,
+    TheVideos,
     TheVideosAdd,
     TheVideosUpdate,
     TheVideosDelete,
+    TheMasterList,
+    TheVueTypeahead,
+    TheLinkPrevue,
+    'vue-pull-refresh': VuePullRefresh
   },
-  components: {
-        'vue-pull-refresh': VuePullRefresh
-    },
     data: function () {
         return {};
     },
